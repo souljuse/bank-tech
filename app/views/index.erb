@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Soul Bank</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="/src/bankAccount.js"></script>
+    <script src="/src/interface.js"></script>
+  </head>
+  <body>
+    <section class = 'text-center'>
+      <p>
+        Welcome!
+      </p>
+      <form action = "/set" method="get" id="key-form">
+        <input name="deposit" id="deposit"/>
+        <input name="withdrawal" id="withdrawal"/>
+        <button class="btn-submit">Submit</button>
+      </form>
+      <p>date       || credit || debit   || balance</p>
+      <div id="bank-statement">
+
+      </div>
+    </section>
+  </body>
+</html>
