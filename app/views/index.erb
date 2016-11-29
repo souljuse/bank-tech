@@ -8,18 +8,28 @@
   </head>
   <body>
     <section class = 'text-center'>
+      <h2>
+        Welcome to Soul Bank
+      </h2>
       <p>
-        Welcome!
+        Please insert the amount you want to deposit or withdraw
       </p>
-      <form action = "/set" method="get" id="key-form">
-        <input name="deposit" id="deposit"/>
-        <input name="withdrawal" id="withdrawal"/>
+      <form method="get" id="key-form">
+        <label for="deposit">Deposit: <input name="deposit" id="deposit"/></label>
+        <label for="withdrawal">Withdraw: <input name="withdrawal" id="withdrawal"/></label>
         <button class="btn-submit">Submit</button>
       </form>
-      <p>date       || credit || debit   || balance</p>
-      <div id="bank-statement">
-
-      </div>
+      <p>
+        Your operations:
+      </p>
+      <table id="bank-statement" style="border:1px solid black;">
+        <tr>
+          <th>Date</th>
+          <th>Credit</th>
+          <th>Debit</th>
+          <th>Balance</th>
+        </tr>
+      </table>
     </section>
   </body>
 </html>
