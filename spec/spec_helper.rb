@@ -5,7 +5,7 @@ require 'capybara/rspec'
 require 'rspec'
 
 Capybara.app = BankTech
-Capybara.default_wait_time = 10
+Capybara.default_max_wait_time = 10
 
 RSpec.configure do |config|
   config.include Capybara::DSL

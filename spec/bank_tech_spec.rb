@@ -15,9 +15,11 @@ context 'If a User makes a deposit' do
     visit '/'
     fill_in(:deposit, with: "1000")
     click_button("Submit")
+    sleep(5)
+    p page.body
     fill_in(:deposit, with: "2000")
     click_button("Submit")
-    visit '/'
+    sleep(5)
     expect(page).to have_content('1000.00')
     expect(page).to have_content('3000.00')
     expect(page).to have_content('2000.00')
@@ -33,6 +35,8 @@ context 'If a User makes a withdrawal' do
     click_button("Submit")
     fill_in(:withdrawal, with: "500")
     click_button("Submit")
-    expect(page).to have_content('29/11/2016 ||        || 500.00  || 2500.00')
+    expect(page).to have_content('1000.00')
+    expect(page).to have_content('500.00')
+    expect(page).to have_content('2500.00')
   end
 end
