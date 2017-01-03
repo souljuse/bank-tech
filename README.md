@@ -4,6 +4,7 @@ A program that lets you do deposit and withdrawal operations with your bank.
 #### Install
 
 To install SoulBank™
+
 1. Clone this repository
 2. Run ```bundle install```
 3. From the local repository run ```ruby app/soul_bank.rb```
